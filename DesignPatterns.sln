@@ -31,31 +31,31 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "src\Structural
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "src\Structural\Facade\Facade.csproj", "{385E086F-1B9C-458E-86B7-3C2530551691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "src\TemplateMethod\TemplateMethod.csproj", "{85A340EC-7CF1-4276-BEC0-6FC24245D80A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "src\Behavioral\TemplateMethod\TemplateMethod.csproj", "{85A340EC-7CF1-4276-BEC0-6FC24245D80A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "src\Strategy\Strategy.csproj", "{B56EFD90-23DD-4E85-9E0A-55161A4CC3A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "src\Behavioral\Strategy\Strategy.csproj", "{B56EFD90-23DD-4E85-9E0A-55161A4CC3A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "src\ChainOfResponsibility\ChainOfResponsibility.csproj", "{6BAA9AF8-1CE8-4A27-9896-594C281A2A53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "src\Behavioral\ChainOfResponsibility\ChainOfResponsibility.csproj", "{6BAA9AF8-1CE8-4A27-9896-594C281A2A53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "src\Observer\Observer.csproj", "{A21714A7-3AB3-40FE-8CC0-E45B1692E090}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "src\Behavioral\Observer\Observer.csproj", "{A21714A7-3AB3-40FE-8CC0-E45B1692E090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "src\Iterator\Iterator.csproj", "{6B3FDE24-FF4E-4851-A237-84B620C10738}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "src\Behavioral\Iterator\Iterator.csproj", "{6B3FDE24-FF4E-4851-A237-84B620C10738}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "src\Structural\Proxy\Proxy.csproj", "{D7BC04A4-F114-422B-8344-1601ABAD117E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "src\Structural\Flyweight\Flyweight.csproj", "{749FDC53-2A71-42FF-8399-15449A96FD6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "src\Command\Command.csproj", "{7F66BF57-2B38-454B-95C5-17360AB4BE12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "src\Behavioral\Command\Command.csproj", "{7F66BF57-2B38-454B-95C5-17360AB4BE12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "src\Memento\Memento.csproj", "{54ACB522-935A-4669-9F79-3CFB3B4957A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "src\Behavioral\Memento\Memento.csproj", "{54ACB522-935A-4669-9F79-3CFB3B4957A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "src\Mediator\Mediator.csproj", "{53044966-3299-4E00-BCFE-6ED56868D56B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "src\Behavioral\Mediator\Mediator.csproj", "{53044966-3299-4E00-BCFE-6ED56868D56B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "src\State\State.csproj", "{A68223A1-E5A9-4445-950B-3537FC07ACA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "src\Behavioral\State\State.csproj", "{A68223A1-E5A9-4445-950B-3537FC07ACA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "src\Visitor\Visitor.csproj", "{7D0C482A-C35B-4885-874A-37B503979AA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "src\Behavioral\Visitor\Visitor.csproj", "{7D0C482A-C35B-4885-874A-37B503979AA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "src\Interpreter\Interpreter.csproj", "{FDAA554E-F91F-4EC8-B567-25CB87799D8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "src\Behavioral\Interpreter\Interpreter.csproj", "{FDAA554E-F91F-4EC8-B567-25CB87799D8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
