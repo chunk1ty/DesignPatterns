@@ -22,7 +22,7 @@ public class JsonExportService : IExportService
 /// <summary>
 /// ConcreteStrategy
 /// </summary>
-public class XMLExportService : IExportService
+public class XmlExportService : IExportService
 {
     public void Export(Order order)
     {
@@ -33,7 +33,7 @@ public class XMLExportService : IExportService
 /// <summary>
 /// ConcreteStrategy
 /// </summary>
-public class CSVExportService : IExportService
+public class CsvExportService : IExportService
 {
     public void Export(Order order)
     {
@@ -46,17 +46,18 @@ public class CSVExportService : IExportService
 /// </summary>
 public class Order
 {
-    public string Customer { get; set; }
-    public int Amount { get; set; }
-    public string Name { get; set; }
-    public string? Description { get; set; }                 
-
     public Order(string customer, int amount, string name)
     {
         Customer = customer;
         Amount = amount;
         Name = name;
     }
+    
+    public string Customer { get; }
+    
+    public int Amount { get; }
+    
+    public string Name { get; }
 
     public void Export(IExportService exportService)
     {

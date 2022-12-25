@@ -134,17 +134,14 @@ public class GoldState : BankAccountState
 /// </summary>
 public class BankAccount
 {
-    public BankAccountState BankAccountState { get; set; }
-
-    public decimal Balance
-    {
-        get { return BankAccountState.Balance; }
-    }
-
     public BankAccount()
     {
         BankAccountState = new RegularState(200, this);
     }
+    
+    public BankAccountState BankAccountState { get; set; }
+
+    public decimal Balance => BankAccountState.Balance;
 
     /// <summary>
     /// Request a deposit

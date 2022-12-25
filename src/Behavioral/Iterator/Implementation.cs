@@ -1,17 +1,5 @@
 ﻿namespace Iterator;
-
-public class Person
-{
-    public string Name { get; set; } 
-    public string Country { get; set; }
-
-    public Person(string name, string country)
-    {
-        Name = name; 
-        Country = country;
-    }
-}
-     
+  
 /// <summary>
 /// Iterator
 /// </summary>
@@ -28,7 +16,7 @@ public interface IPeopleIterator
 /// </summary>
 public class PeopleIterator : IPeopleIterator
 {
-    private PeopleCollection _peopleCollection;
+    private readonly PeopleCollection _peopleCollection;
     private int _current = 0; 
      
     public PeopleIterator(PeopleCollection collection)
@@ -39,8 +27,7 @@ public class PeopleIterator : IPeopleIterator
     public Person First()
     {
         _current = 0;
-        return _peopleCollection
-            .OrderBy(p => p.Name).ToList()[_current];
+        return _peopleCollection.OrderBy(p => p.Name).ToList()[_current];
     }
 
     public Person Next()
@@ -51,22 +38,13 @@ public class PeopleIterator : IPeopleIterator
             return _peopleCollection
                 .OrderBy(p => p.Name).ToList()[_current];   
         }
-        else
-        {
-            return null;
-        }
+
+        return null;
     }
 
-    public bool IsDone
-    {
-        get { return _current >= _peopleCollection.Count; }
-    }
+    public bool IsDone => _current >= _peopleCollection.Count;
 
-    public Person CurrentItem
-    {
-        get { return _peopleCollection
-            .OrderBy(p => p.Name).ToList()[_current]; }
-    }   
+    public Person CurrentItem => _peopleCollection.OrderBy(p => p.Name).ToList()[_current];
 }
 
 /// <summary>
@@ -86,4 +64,17 @@ public class PeopleCollection : List<Person>, IPeopleCollection
     {
         return new PeopleIterator(this);
     } 
+}
+
+public class Person
+{
+    public Person(string name, string country)
+    {
+        Name = name; 
+        Country = country;
+    }
+    
+    public string Name { get; } 
+    
+    public string Country { get; }
 }

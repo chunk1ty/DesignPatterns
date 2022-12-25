@@ -21,8 +21,8 @@ public class AddEmployeeToManagerListMemento
         Employee = employee;
     }
     
-    public int ManagerId { get; private set; }
-    public Employee? Employee { get; private set; }
+    public int ManagerId { get; }
+    public Employee? Employee { get; }
 }
 
 /// <summary>
@@ -133,14 +133,14 @@ public class CommandManager
 
 public class Employee
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-
     public Employee(int id, string name)
     {
         Id = id;
         Name = name;
     }
+    
+    public int Id { get; }
+    public string Name { get; }
 }
 
 public class Manager : Employee

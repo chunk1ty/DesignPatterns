@@ -57,6 +57,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "src\Behavioral\V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "src\Behavioral\Interpreter\Interpreter.csproj", "{FDAA554E-F91F-4EC8-B567-25CB87799D8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Playground", "Playground", "{1BEA3EE6-6567-4B79-B6C2-B061D4A134A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingManager", "src\Playground\BuildingManager\BuildingManager.csproj", "{2F553C53-7DC9-4F4F-AC09-E3D82D49BE83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +159,10 @@ Global
 		{FDAA554E-F91F-4EC8-B567-25CB87799D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDAA554E-F91F-4EC8-B567-25CB87799D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDAA554E-F91F-4EC8-B567-25CB87799D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F553C53-7DC9-4F4F-AC09-E3D82D49BE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F553C53-7DC9-4F4F-AC09-E3D82D49BE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F553C53-7DC9-4F4F-AC09-E3D82D49BE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F553C53-7DC9-4F4F-AC09-E3D82D49BE83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -186,6 +194,8 @@ Global
 		{A68223A1-E5A9-4445-950B-3537FC07ACA6} = {F21109C8-CCB5-4A00-B131-48F926BACB59}
 		{7D0C482A-C35B-4885-874A-37B503979AA2} = {F21109C8-CCB5-4A00-B131-48F926BACB59}
 		{FDAA554E-F91F-4EC8-B567-25CB87799D8F} = {F21109C8-CCB5-4A00-B131-48F926BACB59}
+		{1BEA3EE6-6567-4B79-B6C2-B061D4A134A0} = {9CE61ADE-B3EE-4045-89A4-6E25E82E6BE0}
+		{2F553C53-7DC9-4F4F-AC09-E3D82D49BE83} = {1BEA3EE6-6567-4B79-B6C2-B061D4A134A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7B0D423-D8CC-4A7A-9A2A-1896734835DD}

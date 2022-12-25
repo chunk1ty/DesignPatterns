@@ -1,26 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace ChainOfResponsibility;
-
-public class Document
-{
-    public Document(string title,
-                    DateTimeOffset lastModified,
-                    bool approvedByLitigation,
-                    bool approvedByManagement)
-    {
-        Title = title;
-        LastModified = lastModified;
-        ApprovedByLitigation = approvedByLitigation;
-        ApprovedByManagement = approvedByManagement;
-    }
-
-    public string Title { get; }
-    public DateTimeOffset LastModified { get; }
-    public bool ApprovedByLitigation { get; }
-    public bool ApprovedByManagement { get; }
-}
-
 /// <summary>
 /// Handler
 /// </summary> 
@@ -144,4 +124,23 @@ public class DocumentApprovedByManagementHandler : IHandler<Document>
         _successor = successor;
         return successor;
     }
+}
+
+public class Document
+{
+    public Document(string title,
+                    DateTimeOffset lastModified,
+                    bool approvedByLitigation,
+                    bool approvedByManagement)
+    {
+        Title = title;
+        LastModified = lastModified;
+        ApprovedByLitigation = approvedByLitigation;
+        ApprovedByManagement = approvedByManagement;
+    }
+
+    public string Title { get; }
+    public DateTimeOffset LastModified { get; }
+    public bool ApprovedByLitigation { get; }
+    public bool ApprovedByManagement { get; }
 }
