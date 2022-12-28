@@ -8,13 +8,7 @@ internal class ThreadSafeLazyLogger
     {
     }
 
-    public static ThreadSafeLazyLogger Instance
-    {
-        get
-        {
-            return _lazyLogger.Value;
-        }
-    }
+    public static ThreadSafeLazyLogger Instance => _lazyLogger.Value;
 
     public void Log(string message)
     {

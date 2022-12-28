@@ -26,6 +26,11 @@ public class Manager : Person
 
     public override Person Clone(bool deepClone = false)
     {
+        // Options of cloning in .NET (http://stackoverflow.com/a/966534/1862812)
+        // Clone Manually - Tedious, but high level of control
+        // Clone with MemberwiseClone - Fastest but only creates a shallow copy, i.e. for reference-type fields the original object and it's clone refer to the same object.
+        // Clone with Reflection - Shallow copy by default, can be re-written to do deep copy. Advantage: automated. Disadvantage: reflection is slow.
+        // Clone with Serialization - Easy, automated. Give up some control and serialization is slowest of all.
         if (deepClone)
         {
             var objectAsJson = JsonConvert.SerializeObject(this);

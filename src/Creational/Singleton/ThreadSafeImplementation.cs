@@ -26,6 +26,7 @@ internal class ThreadSafeLogger
                     }
                 }
             }
+
             return _logger;
         }
     }
